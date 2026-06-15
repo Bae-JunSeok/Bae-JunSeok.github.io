@@ -320,6 +320,14 @@ strong {
     font-size: 0.9rem;
 }
 
+.certification-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.certification-list li {
+    grid-template-columns: 112px minmax(0, 1fr);
+}
+
 .section-heading {
     margin-bottom: 20px;
 }
@@ -369,15 +377,73 @@ strong {
     border-left: 2px solid #cfe1e8;
 }
 
+.skill-meter-list li {
+    grid-template-columns: minmax(0, 1fr) auto;
+    align-items: center;
+    gap: 14px;
+}
+
 .skill-category strong {
     color: var(--ink);
     font-size: 0.96rem;
 }
 
-.skill-category span {
+.skill-category span,
+.skill-category em {
     color: var(--muted);
     font-size: 0.9rem;
     line-height: 1.52;
+}
+
+.skill-category em {
+    display: block;
+    font-style: normal;
+}
+
+.skill-meter {
+    display: inline-flex;
+    flex-shrink: 0;
+    gap: 4px;
+    align-items: center;
+}
+
+.skill-meter i {
+    display: block;
+    width: 18px;
+    height: 9px;
+    border-radius: 2px;
+    background: var(--accent);
+    box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.08);
+}
+
+.skill-meter i.empty {
+    background: #d5e1e7;
+    box-shadow: none;
+}
+
+.skill-legend {
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px 18px;
+    border: 1px solid #dfe8ee;
+    border-radius: 8px;
+    background: #fbfdfe;
+    padding: 14px 16px;
+}
+
+.skill-legend div {
+    display: grid;
+    grid-template-columns: auto minmax(0, 1fr);
+    gap: 10px;
+    align-items: center;
+}
+
+.skill-legend p {
+    margin: 0;
+    color: var(--muted);
+    font-size: 0.82rem;
+    line-height: 1.45;
 }
 
 .project-overview-panel {
@@ -419,6 +485,21 @@ strong {
     margin: 0;
     color: var(--accent-dark);
     font-size: 1.2rem;
+}
+
+.award-badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    border: 1px solid rgba(207, 111, 76, 0.28);
+    border-radius: 999px;
+    background: var(--warm-soft);
+    padding: 2px 8px;
+    color: #a84f30;
+    font-size: 0.72rem;
+    font-weight: 800;
+    vertical-align: 0.12em;
 }
 
 .timeline-item p {
@@ -502,6 +583,12 @@ strong {
     font-weight: 800;
 }
 
+.project-badges .award-badge {
+    border-color: rgba(207, 111, 76, 0.28);
+    background: var(--warm-soft);
+    color: #a84f30;
+}
+
 .project-copy section {
     display: grid;
     gap: 10px;
@@ -514,6 +601,39 @@ strong {
     margin: 0;
     color: var(--accent-dark);
     font-size: 1.08rem;
+}
+
+.project-overview-table {
+    display: grid;
+    gap: 8px;
+    margin: 0;
+    padding: 0;
+}
+
+.project-overview-table div {
+    display: grid;
+    grid-template-columns: 92px minmax(0, 1fr);
+    gap: 12px;
+    border-bottom: 1px solid #e6edf1;
+    padding-bottom: 8px;
+}
+
+.project-overview-table div:last-child {
+    border-bottom: 0;
+    padding-bottom: 0;
+}
+
+.project-overview-table dt {
+    color: var(--accent);
+    font-size: 0.78rem;
+    font-weight: 800;
+}
+
+.project-overview-table dd {
+    margin: 0;
+    color: #425368;
+    font-size: 0.9rem;
+    line-height: 1.55;
 }
 
 .project-role-list {
@@ -591,6 +711,11 @@ strong {
     padding-top: 22px;
 }
 
+.problem-story[id],
+.metric-strip[id] {
+    scroll-margin-top: 76px;
+}
+
 .problem-story {
     display: grid;
     grid-template-columns: minmax(240px, 0.75fr) minmax(0, 1.25fr);
@@ -643,6 +768,35 @@ strong {
     font-size: 0.96rem;
 }
 
+.trouble-decision-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 14px;
+    margin-top: 14px;
+}
+
+.trouble-decision-grid div {
+    display: grid;
+    align-content: start;
+    gap: 6px;
+    border-left: 3px solid var(--warm);
+    background: #fffaf7;
+    padding: 13px 14px;
+}
+
+.trouble-decision-grid span {
+    color: #a84f30;
+    font-size: 0.78rem;
+    font-weight: 800;
+}
+
+.trouble-decision-grid p {
+    margin: 0;
+    color: #4d5c6d;
+    font-size: 0.9rem;
+    line-height: 1.55;
+}
+
 @media screen and (min-width: 761px) {
     .site-nav-inner,
     .container {
@@ -673,11 +827,16 @@ strong {
     .problem-story,
     .project-timeline,
     .problem-grid,
-    .metric-strip {
+    .metric-strip,
+    .trouble-decision-grid {
         grid-template-columns: 1fr;
     }
 
     .skill-board {
+        grid-template-columns: 1fr;
+    }
+
+    .skill-legend {
         grid-template-columns: 1fr;
     }
 }
@@ -722,6 +881,15 @@ strong {
     .intro-history li {
         grid-template-columns: 1fr;
         gap: 1px;
+    }
+
+    .certification-list {
+        grid-template-columns: 1fr;
+    }
+
+    .skill-meter-list li,
+    .project-overview-table div {
+        grid-template-columns: 1fr;
     }
 
     .project-shot-grid {
