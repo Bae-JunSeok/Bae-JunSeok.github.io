@@ -4,310 +4,304 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>배준석 | Portfolio</title>
+    <title>배준석 | Backend Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body id="top">
+    <nav class="site-nav">
+        <div class="site-nav-inner">
+            <a class="site-nav-brand" href="#top">BJS · Portfolio</a>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li class="site-nav-dropdown">
+                    <a href="#project-overview">Projects</a>
+                    <div class="site-nav-submenu">
+                        <ul>
+                            <li><a href="#project-overview">프로젝트 요약</a></li>
+                            <li><a href="#p-talemory"><span>Project 01</span>TaleMory</a></li>
+                            <li><a href="#p-dahaeng"><span>Project 02</span>DAHAENG</a></li>
+                            <li><a href="#p-dadap"><span>Project 03</span>DADAP</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
     <main class="container">
-        <section class="card profile-card">
-            <div class="profile-content">
-                <div class="profile-image-container" aria-hidden="true">
-                    <div class="profile-initials">BJS</div>
-                </div>
-                <div class="profile-info">
-                    <div class="name-title">
-                        <h1>배준석 <span class="eng-name">JunSeok Bae</span></h1>
-                    </div>
+        <section class="panel intro-panel" id="about">
+            <p class="section-kicker">Backend Developer</p>
+            <h1 class="intro-title">서비스 흐름과 AI 파이프라인을 끝까지 연결하는 백엔드 개발자, 배준석입니다.</h1>
 
-                    <div class="quote">
-                        <p>서비스 흐름을 끝까지 연결하고, 병목을 코드와 구조로 풀어내는 백엔드·AI 개발자입니다.</p>
+            <div class="intro-layout">
+                <aside class="intro-profile">
+                    <div class="profile-mark">BJS</div>
+                    <div class="intro-name">
+                        <strong>배준석</strong>
+                        <span>JunSeok Bae</span>
                     </div>
-
-                    <div class="contact-info">
-                        <div class="info-item">
-                            <i class="fa-solid fa-envelope"></i>
-                            <span class="info-label">E-Mail | </span>
-                            <span>qownstjr77@gmail.com</span>
-                        </div>
-                        <div class="info-item">
-                            <i class="fa-brands fa-github"></i>
-                            <span class="info-label">Github | </span>
-                            <a href="https://github.com/Bae-JunSeok" target="_blank" rel="noreferrer">github.com/Bae-JunSeok</a>
-                        </div>
-                        <div class="info-item">
-                            <i class="fa-solid fa-code-branch"></i>
-                            <span class="info-label">Commit | </span>
-                            <span>S14P11D203, S14P21D206, S14P31S210 기여 내역 기반</span>
-                        </div>
+                    <div class="intro-contact">
+                        <a href="mailto:qownstjr77@gmail.com"><strong>Email</strong> qownstjr77@gmail.com</a>
+                        <a href="https://github.com/Bae-JunSeok" target="_blank" rel="noreferrer"><strong>GitHub</strong> github.com/Bae-JunSeok</a>
+                        <span><strong>Focus</strong> Spring Boot · Kotlin · AI Integration · Infra</span>
                     </div>
-                </div>
-            </div>
-        </section>
+                </aside>
 
-        <section class="card">
-            <h2 class="section-title">About Me</h2>
-            <div class="divider"></div>
-            <div class="content-text">
-                <p>
-                    백엔드 도메인 로직과 AI 파이프라인을 함께 다루며, 사용자가 만나는 기능이 실제 서비스 흐름 안에서 안정적으로 이어지도록 만드는 데 관심이 있습니다.
-                    DADAP에서는 인증, 학습, 스크랩, 스트릭과 같은 사용자 활동 데이터를 API로 연결했고, DAHAENG에서는 도시·추천 API와 점수 산정 로직을 개선했습니다.
-                    TaleMory에서는 TTS 생성, RabbitMQ 비동기 처리, S3 저장, Qwen TTS 연동까지 음성 합성 흐름을 중심으로 구현했습니다.
-                </p>
-                <p>
-                    커밋 기록을 보면 새로운 기능을 만드는 일뿐 아니라, 점수 기준 정리, 문서화, 배포 환경 변수 정비, 화면 사용성 수정처럼 서비스가 끝까지 돌아가게 만드는 작업도 꾸준히 맡았습니다.
-                    문제를 빠르게 기능으로 옮기되, 이후 운영과 협업자가 이해할 수 있는 구조로 남기는 개발자가 되고자 합니다.
-                </p>
-            </div>
-        </section>
-
-        <section class="card">
-            <h2 class="section-title">Skills and Tools</h2>
-            <div class="divider"></div>
-            <div class="skills-list">
-                <div class="skill-row">
-                    <span class="skill-category">Language</span>
-                    <div class="skill-content">
-                        <span class="skill-items">Java, Kotlin, Python, TypeScript</span>
-                        <span class="skill-capability">Spring/Kotlin 백엔드 도메인 로직, Python AI 워커와 FastAPI 서버, React 화면 수정 및 API 연동 경험</span>
-                    </div>
-                </div>
-                <div class="skill-row">
-                    <span class="skill-category">Backend</span>
-                    <div class="skill-content">
-                        <span class="skill-items">Spring Boot, Spring Security, JPA, JWT, OAuth2, Gradle</span>
-                        <span class="skill-capability">OAuth 로그인, 사용자 인증/인가, 도시·추천·학습 도메인 API, 테스트 코드와 문서 기반 로직 검증</span>
-                    </div>
-                </div>
-                <div class="skill-row">
-                    <span class="skill-category">AI / Pipeline</span>
-                    <div class="skill-content">
-                        <span class="skill-items">FastAPI, RabbitMQ, Qwen TTS, OpenAI, Gemini, Replicate</span>
-                        <span class="skill-capability">TTS 작업 비동기 처리, MQ 메시지 스키마 설계, 음성 파일 S3 저장, AI 결과를 백엔드 상태와 연결</span>
-                    </div>
-                </div>
-                <div class="skill-row">
-                    <span class="skill-category">Data</span>
-                    <div class="skill-content">
-                        <span class="skill-items">MySQL, Redis, MongoDB, Flyway</span>
-                        <span class="skill-capability">추천 후보 조회, 도시 상세 데이터 구성, 마이그레이션 작성, 캐시와 잡 상태 관리 흐름 이해</span>
-                    </div>
-                </div>
-                <div class="skill-row">
-                    <span class="skill-category">Infra</span>
-                    <div class="skill-content">
-                        <span class="skill-items">Docker, Nginx, GitLab CI/CD, AWS S3</span>
-                        <span class="skill-capability">docker-compose 환경 구성, 배포 환경 변수 정리, 외부 서비스 문서화, S3 기반 이미지·오디오 저장 연동</span>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="card project-card">
-            <h2 class="section-title">Projects</h2>
-            <div class="divider"></div>
-
-            <div class="project-header">
-                <h3>DADAP - AI 면접 코칭 서비스 <span class="date">2026.01 ~ 2026.02</span></h3>
-            </div>
-
-            <div class="project-content">
-                <div class="project-top">
-                    <div class="project-main-image">
-                        <img src="assets/images/dadap/main.png" alt="DADAP 메인 화면">
-                    </div>
-                    <div class="project-info-box">
-                        <h4>프로젝트 상세</h4>
-                        <div class="project-details">
-                            <div class="detail-row">
-                                <span class="label">역할</span>
-                                <span class="value">백엔드 개발, 일부 프론트 연동, 배포 문서 정리</span>
-                            </div>
-                            <div class="detail-row">
-                                <span class="label">주요기여</span>
-                                <span class="value">GitHub/Google OAuth, 학습 페이지 API, 스크랩, 스트릭·학습 로그 API, 챗봇 FAQ 데이터 연동</span>
-                            </div>
-                            <div class="detail-row">
-                                <span class="label">사용기술</span>
-                                <span class="value tech-stack">Java 21, Spring Boot, Spring Security, React, TypeScript, MySQL, Redis, Docker, AWS S3</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <p class="highlight-text">"면접 연습, AI 피드백, 학습 기록을 한 흐름으로 연결한 주니어 개발자 면접 코칭 서비스"</p>
-
-                <div class="screenshot-grid">
-                    <figure>
-                        <img src="assets/images/dadap/study-log.png" alt="DADAP 학습 기록 화면">
-                        <figcaption>학습 기록</figcaption>
-                    </figure>
-                    <figure>
-                        <img src="assets/images/dadap/report.png" alt="DADAP 면접 분석 결과 화면">
-                        <figcaption>면접 분석 결과</figcaption>
-                    </figure>
-                </div>
-
-                <div class="project-overview-card">
-                    <h5>프로젝트 개요</h5>
-                    <p>
-                        DADAP은 CS/포트폴리오 면접을 실전처럼 연습하고, 답변과 비언어적 요소를 분석해 피드백을 제공하는 AI 면접 코칭 서비스입니다.
-                        사용자는 면접 모드 선택, 답변 제출, 결과 리포트 확인, 학습 페이지 복습까지 하나의 흐름에서 사용할 수 있습니다.
+                <div class="intro-content">
+                    <p class="intro-summary">
+                        Spring 기반 API와 AI 작업 흐름을 연결하며, 사용자가 만나는 기능이 실제 서비스 환경에서 안정적으로 이어지도록 만드는 데 관심이 있습니다.
                     </p>
-                </div>
+                    <p class="intro-description">
+                        DADAP에서는 인증, 학습, 스크랩, 스트릭 API를 구현했고, DAHAENG에서는 추천/도시 조회 성능과 점수 산정 로직을 개선했습니다.
+                        TaleMory에서는 RabbitMQ 기반 비동기 TTS 파이프라인, Qwen TTS 연동, S3 저장, 프론트 화면 보완까지 맡아 AI 결과가 제품 경험으로 이어지도록 다듬었습니다.
+                    </p>
 
-                <div class="project-roles">
-                    <h4>역할 및 기여</h4>
-                    <ul>
-                        <li><strong>OAuth 인증 구현:</strong> GitHub OAuth와 Google OAuth 로그인 플로우를 구현하고, 백엔드 사용자 도메인과 프론트 리다이렉트 페이지를 연결했습니다.</li>
-                        <li><strong>학습 페이지 API 구현:</strong> 질문 목록·상세 DTO, 카테고리/키워드 엔티티, repository, service, controller를 구성해 CS 학습 페이지에서 문제를 조회할 수 있게 했습니다.</li>
-                        <li><strong>스크랩 기능 구현:</strong> 학습 질문 스크랩 엔티티와 repository/service/controller를 추가하고, 한글 데이터 조회 이슈를 보완했습니다.</li>
-                        <li><strong>스트릭·학습 로그 개선:</strong> 면접 기록 기반 스트릭 API와 일별/카테고리별 평균 응답을 구성하고, 프론트 기여도 그래프와 연동되는 응답 구조를 수정했습니다.</li>
-                        <li><strong>배포 산출물 정리:</strong> 포팅 매뉴얼, 외부 서비스 문서, 시연 시나리오, dump.sql과 화면 자료를 정리해 재현 가능한 실행 문서를 보강했습니다.</li>
-                    </ul>
+                    <div class="intro-history">
+                        <section>
+                            <h2>Strength</h2>
+                            <ul>
+                                <li><time>01</time><span>API, 메시지 큐, 스토리지, AI 워커를 연결해 긴 작업을 안정적인 사용자 흐름으로 만듭니다.</span></li>
+                                <li><time>02</time><span>로그와 지표로 병목을 확인하고, 반복 조회와 무거운 작업을 구조적으로 줄이는 개선을 선호합니다.</span></li>
+                                <li><time>03</time><span>포팅 매뉴얼, 외부 서비스 문서, 시연 시나리오처럼 재현 가능한 산출물을 함께 정리합니다.</span></li>
+                            </ul>
+                        </section>
+
+                        <section>
+                            <h2>Experience</h2>
+                            <ul>
+                                <li><time>2026.04 - 2026.05</time><span>TaleMory · AI 영어 동화책 생성 서비스 <em>AI TTS 파이프라인, RabbitMQ, S3, 배포 환경 정리</em></span></li>
+                                <li><time>2026.02 - 2026.03</time><span>DAHAENG · AI 여행 추천 서비스 <em>추천/도시 API, 성능 개선, 점수 산정 로직 정리</em></span></li>
+                                <li><time>2026.01 - 2026.02</time><span>DADAP · AI 면접 코칭 서비스 <em>OAuth, 학습/스크랩/스트릭 API, 산출 문서 정리</em></span></li>
+                            </ul>
+                        </section>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section class="card project-card">
-            <div class="project-header">
-                <h3>DAHAENG - AI 여행 추천 & 비용 비교 서비스 <span class="date">2026.02 ~ 2026.03</span></h3>
+        <section class="panel" id="skills">
+            <div class="section-heading">
+                <p class="section-kicker">Skills</p>
+                <h2>기술 스택</h2>
             </div>
-
-            <div class="project-content">
-                <div class="project-top">
-                    <div class="project-main-image">
-                        <img src="assets/images/dahaeng/main.png" alt="DAHAENG 메인 추천 화면">
-                    </div>
-                    <div class="project-info-box">
-                        <h4>프로젝트 상세</h4>
-                        <div class="project-details">
-                            <div class="detail-row">
-                                <span class="label">역할</span>
-                                <span class="value">백엔드 추천·도시 도메인 개발, 성능 개선, 점수 로직 문서화</span>
-                            </div>
-                            <div class="detail-row">
-                                <span class="label">주요기여</span>
-                                <span class="value">도시 API, 추천 후보 조회, 점수 산정 로직, 도시 상세 응답, 최근 본 도시, 북마크 연동 수정</span>
-                            </div>
-                            <div class="detail-row">
-                                <span class="label">성과</span>
-                                <span class="value">도시 목록 API의 N+1 조회를 배치 조회로 전환해, 80개 도시 기준 반복 조회 구조를 약 4회 핵심 조회 구조로 개선</span>
-                            </div>
-                            <div class="detail-row">
-                                <span class="label">사용기술</span>
-                                <span class="value tech-stack">Java 17, Spring Boot, JPA, Spring Security, MySQL, MongoDB, Redis, Spring AI, Docker</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <p class="highlight-text">"사용자 취향, 예산, 위험도, 관광지 데이터를 결합해 이유가 보이는 여행지를 추천하는 서비스"</p>
-
-                <div class="screenshot-grid">
-                    <figure>
-                        <img src="assets/images/dahaeng/detail.png" alt="DAHAENG 추천 도시 상세 화면">
-                        <figcaption>추천 도시 상세</figcaption>
-                    </figure>
-                    <figure>
-                        <img src="assets/images/dahaeng/cost.png" alt="DAHAENG 생활물가 비교 화면">
-                        <figcaption>생활물가 비교</figcaption>
-                    </figure>
-                </div>
-
-                <div class="project-overview-card">
-                    <h5>프로젝트 개요</h5>
-                    <p>
-                        DAHAENG은 Google/YouTube 연동으로 사용자의 관심사를 분석하고, 도시별 물가·항공·관광지·위험도 데이터를 결합해 여행지를 추천하는 서비스입니다.
-                        추천 결과에서 끝나지 않고 상세 탐색, 북마크, 도시 비교까지 이어지는 의사결정 흐름을 제공합니다.
-                    </p>
-                </div>
-
-                <div class="project-roles">
-                    <h4>역할 및 기여</h4>
+            <div class="skill-board">
+                <article class="skill-category">
+                    <h3>Language</h3>
                     <ul>
-                        <li><strong>도시 조회 API 구현:</strong> 모든 도시 조회와 추천/비추천 도시 상세 응답 DTO를 구성하고, 위험도·관광지·태그 데이터를 포함하도록 CityService를 확장했습니다.</li>
-                        <li><strong>추천 엔진 기반 구현:</strong> 추천 요청/응답, 후보 projection, 관광지 추천 repository, 뉴스/장소 enrichment service, 추천 설명 생성 service를 구성했습니다.</li>
-                        <li><strong>점수 산정 로직 개선:</strong> 태그 점수 비중을 조정하고 위험도·예산·기후 태그를 추천 점수에 반영했으며, API별 점수 불일치 문제를 정리했습니다.</li>
-                        <li><strong>성능 최적화:</strong> 도시별로 항공권·생활비·위험도·국가 정보를 반복 조회하던 N+1 구조를 제거하고, 도시+국가/항공권/생활비/위험도 데이터를 배치 조회 후 Map으로 조립하도록 바꿨습니다. 80개 도시 기준으로는 항공권 80회, 생활비 80회, 위험도 다수 조회가 발생할 수 있던 구조를 핵심 조회 약 4회로 줄였습니다.</li>
-                        <li><strong>병목 계측:</strong> 추천 상세 API에 `basicDataMs`, `placesMs`, `newsMs`, `narrationMs`, `totalMs` 타이밍 로그를 추가해, 실측 예시 기준 전체 9.5초 중 뉴스 단계 약 4.9초, 추천 이유 생성 약 2.7초가 병목임을 확인했습니다.</li>
-                        <li><strong>사용자 흐름 보완:</strong> 최근 본 도시를 확인할 수 있도록 인증 사용자 정보를 city detail API에 연결하고, 북마크가 cityId와 recommendId를 함께 고려하도록 수정했습니다.</li>
+                        <li><strong>Java / Kotlin</strong><span>Spring 기반 도메인 API와 Kotlin DDD 구조의 백엔드 기능 구현</span></li>
+                        <li><strong>Python</strong><span>FastAPI, AI worker, TTS 서버 연동 및 작업 스크립트 구성</span></li>
+                        <li><strong>TypeScript</strong><span>React 화면 수정과 API 응답 구조 연동 경험</span></li>
                     </ul>
-                </div>
+                </article>
+
+                <article class="skill-category">
+                    <h3>Backend</h3>
+                    <ul>
+                        <li><strong>Spring Boot</strong><span>인증, 학습, 추천, 도시 상세, 스토리 생성 도메인 API 개발</span></li>
+                        <li><strong>Spring Security / JWT / OAuth2</strong><span>Kakao, Google, GitHub OAuth 흐름과 사용자 인증 상태 연결</span></li>
+                        <li><strong>JPA / Flyway</strong><span>도메인 모델, 마이그레이션, 조회 응답 DTO 구성</span></li>
+                    </ul>
+                </article>
+
+                <article class="skill-category">
+                    <h3>AI / Pipeline</h3>
+                    <ul>
+                        <li><strong>RabbitMQ</strong><span>AI 요청/결과 메시지 스키마와 consumer/publisher 흐름 구성</span></li>
+                        <li><strong>Qwen TTS / OpenAI / Gemini</strong><span>음성 합성, 스토리 생성, 이미지 분석 결과를 서비스 상태와 연결</span></li>
+                        <li><strong>S3</strong><span>이미지, 오디오, 최종 산출물 저장과 URL 응답 연동</span></li>
+                    </ul>
+                </article>
+
+                <article class="skill-category">
+                    <h3>Data / Infra</h3>
+                    <ul>
+                        <li><strong>MySQL / Redis / MongoDB</strong><span>추천 후보, 도시 상세 데이터, 캐시 및 작업 상태 관리</span></li>
+                        <li><strong>Docker / Nginx</strong><span>로컬/개발/운영 compose와 reverse proxy 환경 구성</span></li>
+                        <li><strong>GitLab CI/CD</strong><span>빌드, 배포, 헬스체크, 알림 흐름 문서화 및 운영</span></li>
+                    </ul>
+                </article>
             </div>
         </section>
 
-        <section class="card project-card">
-            <div class="project-header">
-                <h3>TaleMory - AI 영어 동화책 생성 서비스 <span class="date">2026.04 ~ 2026.05</span></h3>
+        <section class="panel project-overview-panel" id="project-overview">
+            <div class="project-overview-head">
+                <p class="section-kicker">Projects</p>
+                <h2>주요 프로젝트</h2>
+                <p>AI 기능을 서비스로 연결한 경험과 백엔드 개선 사례를 최신순으로 정리했습니다.</p>
             </div>
 
-            <div class="project-content">
-                <div class="project-top">
-                    <div class="project-main-image">
-                        <img src="assets/images/talemory/main.png" alt="TaleMory 메인 화면">
+            <div class="project-timeline">
+                <article class="timeline-item">
+                    <time>2026.04 - 2026.05</time>
+                    <h3>TaleMory</h3>
+                    <p>가족 사진과 목소리로 AI 영어 동화책을 생성하는 서비스</p>
+                    <dl>
+                        <div><dt>역할</dt><dd>AI TTS 파이프라인 · Backend/Frontend 보완 · Infra 문서</dd></div>
+                        <div><dt>기술</dt><dd>Kotlin · Spring Boot · FastAPI · RabbitMQ · Qwen TTS · S3 · Docker</dd></div>
+                    </dl>
+                </article>
+
+                <article class="timeline-item">
+                    <time>2026.02 - 2026.03</time>
+                    <h3>DAHAENG</h3>
+                    <p>YouTube 취향 분석 기반 AI 여행 도시 추천 서비스</p>
+                    <dl>
+                        <div><dt>역할</dt><dd>추천/도시 API · 점수 산정 로직 · 조회 성능 개선</dd></div>
+                        <div><dt>기술</dt><dd>Java · Spring Boot · JPA · Spring AI · MySQL · MongoDB · Redis</dd></div>
+                    </dl>
+                </article>
+
+                <article class="timeline-item">
+                    <time>2026.01 - 2026.02</time>
+                    <h3>DADAP</h3>
+                    <p>CS/포트폴리오 면접을 실전처럼 연습하는 AI 면접 코칭 서비스</p>
+                    <dl>
+                        <div><dt>역할</dt><dd>OAuth · 학습/스크랩/스트릭 API · 포팅/시연 산출물</dd></div>
+                        <div><dt>기술</dt><dd>Java · Spring Boot · Spring Security · React · MySQL · Redis · S3</dd></div>
+                    </dl>
+                </article>
+            </div>
+        </section>
+
+        <section class="project-stack" id="projects">
+            <article class="project-card" id="p-talemory">
+                <div class="project-detail">
+                    <div class="project-copy">
+                        <p class="section-kicker">Project 01</p>
+                        <h3>TaleMory</h3>
+                        <p class="project-lead">가족의 여행 사진과 목소리를 바탕으로 영어 동화책, 한국어 번역, 가족 목소리 음성을 자동 생성하는 AI 동화책 서비스입니다.</p>
+                        <div class="project-badges">
+                            <span>6인 팀</span>
+                            <span>AI Pipeline</span>
+                            <span>Backend</span>
+                            <span>2026.04 - 2026.05</span>
+                        </div>
+
+                        <section>
+                            <h4>핵심 기여</h4>
+                            <ul class="project-role-list">
+                                <li>FastAPI TTS route, schema, service, 테스트를 구성해 음성 합성 기본 흐름 구현</li>
+                                <li>Preview TTS와 본문 TTS를 RabbitMQ 작업으로 분리하고 요청/결과 메시지 스키마 정리</li>
+                                <li>생성된 음성 파일을 S3에 저장하고 백엔드가 key와 URL을 함께 다룰 수 있도록 응답 DTO 보완</li>
+                                <li>Qwen TTS 서버 클라이언트와 별도 FastAPI 서버 코드를 추가해 외부 GPU 서버 연동 흐름 구성</li>
+                                <li>TensorRT 적용으로 평균 합성 시간 14.00초에서 6.97초, Story TTS 전체 처리 8분 45초에서 4분 04초로 개선</li>
+                            </ul>
+                        </section>
                     </div>
-                    <div class="project-info-box">
-                        <h4>프로젝트 상세</h4>
-                        <div class="project-details">
-                            <div class="detail-row">
-                                <span class="label">역할</span>
-                                <span class="value">AI TTS 파이프라인, BE/FE 음성 생성 연동, 배포 환경 정리</span>
-                            </div>
-                            <div class="detail-row">
-                                <span class="label">주요기여</span>
-                                <span class="value">TTS API, RabbitMQ 비동기 처리, Qwen TTS 연동, S3 저장, 웹툰 모드 음성 배정, 미리보기 UI 수정</span>
-                            </div>
-                            <div class="detail-row">
-                                <span class="label">성과</span>
-                                <span class="value">TensorRT 적용으로 요청당 평균 합성 시간 14.00초 → 6.97초, weighted RTF 2.44 → 1.19, 전체 Story TTS 약 8분 45초 → 4분 04초 개선</span>
-                            </div>
-                            <div class="detail-row">
-                                <span class="label">사용기술</span>
-                                <span class="value tech-stack">Python, FastAPI, RabbitMQ, Qwen TTS, Kotlin, Spring Boot, React, MySQL, Redis, AWS S3, Docker</span>
-                            </div>
+                    <div class="project-media">
+                        <figure class="project-main-shot"><img src="assets/images/talemory/main.png" alt="TaleMory 메인 화면"></figure>
+                        <div class="project-shot-grid">
+                            <figure><img src="assets/images/talemory/voice.png" alt="TaleMory 목소리 선택 화면"><figcaption>목소리 선택</figcaption></figure>
+                            <figure><img src="assets/images/talemory/webtoon.png" alt="TaleMory 웹툰 뷰어 화면"><figcaption>웹툰 뷰어</figcaption></figure>
                         </div>
                     </div>
                 </div>
 
-                <p class="highlight-text">"가족 여행 사진과 목소리를 AI 동화책과 웹툰형 뷰어로 재구성하는 서비스"</p>
+                <div class="problem-story">
+                    <div class="problem-story-main">
+                        <span>문제 해결</span>
+                        <h4>긴 AI 음성 생성 작업을 사용자 흐름에서 분리</h4>
+                        <p>동화 본문 전체 TTS는 요청 시간이 길고 실패 복구가 필요했습니다. 동기 요청으로 처리하면 사용자는 응답을 기다려야 하고, 서버는 무거운 AI 작업에 묶이게 됩니다.</p>
+                    </div>
+                    <div class="problem-grid">
+                        <div><strong>비동기화</strong><p>RabbitMQ topic exchange 기반으로 AI 요청과 결과를 분리하고, consumer가 작업 상태를 갱신하도록 구성했습니다.</p></div>
+                        <div><strong>저장 흐름</strong><p>합성 오디오는 S3에 저장하고, 백엔드는 S3 key와 접근 URL을 응답에 포함해 프론트 재생 흐름과 연결했습니다.</p></div>
+                        <div><strong>성능 개선</strong><p>TensorRT 적용 전후 로그를 비교해 평균 합성 시간과 weighted RTF를 절반 수준으로 줄였습니다.</p></div>
+                    </div>
+                </div>
+            </article>
 
-                <div class="screenshot-grid">
-                    <figure>
-                        <img src="assets/images/talemory/voice.png" alt="TaleMory 목소리 선택 화면">
-                        <figcaption>목소리 선택</figcaption>
-                    </figure>
-                    <figure>
-                        <img src="assets/images/talemory/webtoon.png" alt="TaleMory 웹툰 뷰어 화면">
-                        <figcaption>웹툰 뷰어</figcaption>
-                    </figure>
+            <article class="project-card" id="p-dahaeng">
+                <div class="project-detail">
+                    <div class="project-copy">
+                        <p class="section-kicker">Project 02</p>
+                        <h3>DAHAENG</h3>
+                        <p class="project-lead">Google/YouTube 연동으로 사용자의 관심사를 분석하고, 물가·항공·관광 데이터를 결합해 이유가 보이는 여행 도시를 추천하는 서비스입니다.</p>
+                        <div class="project-badges">
+                            <span>6인 팀</span>
+                            <span>Recommendation</span>
+                            <span>Backend</span>
+                            <span>2026.02 - 2026.03</span>
+                        </div>
+
+                        <section>
+                            <h4>핵심 기여</h4>
+                            <ul class="project-role-list">
+                                <li>추천/비추천 도시 상세 응답 DTO와 도시 조회 API 확장</li>
+                                <li>추천 후보 projection, 관광지 추천 repository, 뉴스/장소 enrichment service 구성</li>
+                                <li>태그 점수 비중을 조정하고 위험도/예산 태그를 추천 점수에 반영하도록 개선</li>
+                                <li>도시별 항공권, 생활비, 위험도 반복 조회를 배치 조회와 Map 조립 구조로 변경</li>
+                                <li>추천 상세 API에 단계별 시간 로그를 추가해 9.5초 중 뉴스 4.9초, 추천 이유 생성 2.7초 병목 확인</li>
+                            </ul>
+                        </section>
+                    </div>
+                    <div class="project-media">
+                        <figure class="project-main-shot"><img src="assets/images/dahaeng/main.png" alt="DAHAENG 메인 추천 화면"></figure>
+                        <div class="project-shot-grid">
+                            <figure><img src="assets/images/dahaeng/detail.png" alt="DAHAENG 추천 도시 상세 화면"><figcaption>도시 상세</figcaption></figure>
+                            <figure><img src="assets/images/dahaeng/cost.png" alt="DAHAENG 생활물가 비교 화면"><figcaption>생활물가 비교</figcaption></figure>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="project-overview-card">
-                    <h5>프로젝트 개요</h5>
-                    <p>
-                        TaleMory는 가족 여행 사진과 메타데이터를 바탕으로 영어 동화책, 한국어 번역, 가족 목소리 음성을 생성하는 AI 서비스입니다.
-                        생성 과정은 스토리보드, 그림 스타일, 음성 클로닝, 최종 미리보기, 발행 단계로 이어지며, 사용자는 종이책과 웹툰 뷰어로 결과물을 볼 수 있습니다.
-                    </p>
+                <div class="metric-strip">
+                    <div><span>조회 구조</span><strong>N+1 제거</strong><p>80개 도시 기준 반복 조회를 항공권, 생활비, 위험도 단위 배치 조회로 정리했습니다.</p></div>
+                    <div><span>병목 계측</span><strong>9.5초 분석</strong><p>단계별 로그로 뉴스 검색과 추천 이유 생성이 주요 지연임을 확인했습니다.</p></div>
+                    <div><span>추천 품질</span><strong>근거 강화</strong><p>취향 태그와 위험도/예산 태그를 함께 반영해 추천 설명의 설득력을 높였습니다.</p></div>
+                </div>
+            </article>
+
+            <article class="project-card" id="p-dadap">
+                <div class="project-detail">
+                    <div class="project-copy">
+                        <p class="section-kicker">Project 03</p>
+                        <h3>DADAP</h3>
+                        <p class="project-lead">CS/포트폴리오 면접을 실전처럼 연습하고, AI가 답변과 비언어적 요소를 분석해 피드백을 제공하는 면접 코칭 서비스입니다.</p>
+                        <div class="project-badges">
+                            <span>6인 팀</span>
+                            <span>AI Interview</span>
+                            <span>Backend</span>
+                            <span>2026.01 - 2026.02</span>
+                        </div>
+
+                        <section>
+                            <h4>핵심 기여</h4>
+                            <ul class="project-role-list">
+                                <li>GitHub OAuth와 Google OAuth 로그인 플로우 구현 및 사용자 도메인 연결</li>
+                                <li>CS 학습 페이지를 위한 질문 목록/상세 DTO, 카테고리/키워드 엔티티, repository, service, controller 구성</li>
+                                <li>학습 질문 스크랩 엔티티와 조회 API를 추가해 사용자별 복습 흐름 지원</li>
+                                <li>면접 기록 기반 스트릭 API 응답 구조를 개선해 일별/카테고리별 평균 응답과 프론트 그래프 연동 보완</li>
+                                <li>포팅 매뉴얼, 외부 서비스 문서, 시연 시나리오, dump.sql, 화면 자료를 재현 가능한 산출물로 정리</li>
+                            </ul>
+                        </section>
+                    </div>
+                    <div class="project-media">
+                        <figure class="project-main-shot"><img src="assets/images/dadap/main.png" alt="DADAP 메인 화면"></figure>
+                        <div class="project-shot-grid">
+                            <figure><img src="assets/images/dadap/study-log.png" alt="DADAP 학습 기록 화면"><figcaption>학습 기록</figcaption></figure>
+                            <figure><img src="assets/images/dadap/report.png" alt="DADAP 면접 분석 리포트 화면"><figcaption>면접 리포트</figcaption></figure>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="project-roles">
-                    <h4>역할 및 기여</h4>
-                    <ul>
-                        <li><strong>TTS 기본 API와 서비스 구현:</strong> FastAPI TTS route, schema, service, 테스트를 구성하고 음성 합성 요청을 처리하는 기본 흐름을 만들었습니다.</li>
-                        <li><strong>RabbitMQ 비동기 처리 전환:</strong> TTS preview와 본문 TTS를 MQ 작업으로 분리하고, `ai.request`/`ai.result` 기반 consumer·publisher·payload 구조를 정리했습니다.</li>
-                        <li><strong>S3 저장과 결과 응답 연동:</strong> 생성된 음성 파일을 S3로 저장하고, 백엔드가 S3 key와 URL을 함께 다룰 수 있도록 TTS result handler와 DTO를 수정했습니다.</li>
-                        <li><strong>Qwen TTS 모델 전환:</strong> Qwen TTS 서버 클라이언트와 별도 FastAPI 서버 코드를 추가하고, 환경 변수와 문서를 정리해 외부 GPU 서버 연동 흐름을 만들었습니다.</li>
-                        <li><strong>TTS 성능 개선:</strong> CosyVoice 합성 병목을 서버 로그로 분석하고 TensorRT plan을 별도 생성해 적용했습니다. 실측 기준 요청당 평균 합성 시간은 약 14.00초에서 6.97초로 약 50% 감소했고, weighted RTF는 2.44에서 1.19로 약 51% 감소했습니다. 34문장 Story TTS 전체 처리도 약 8분 45초 수준에서 4분 04초로 약 2배 빨라졌습니다.</li>
-                        <li><strong>웹툰 모드 음성 배정:</strong> 웹툰 모드에서 voice assignment를 필수 단계로 연결하고, StoryVoiceAssignment 도메인과 프론트 목소리 녹음 페이지를 함께 수정했습니다.</li>
-                        <li><strong>FE/BE 품질 보완:</strong> 최종 미리보기와 뷰어 화면 CSS, 한글 폰트, 아이 나이 입력 검증, 여행 날짜 선택 UI 등 사용성 이슈를 보완했습니다.</li>
-                    </ul>
+                <div class="problem-story">
+                    <div class="problem-story-main">
+                        <span>서비스 연결</span>
+                        <h4>면접 연습 이후의 학습 루프까지 API로 확장</h4>
+                        <p>단순 면접 기능에서 끝나지 않고, 질문 학습, 스크랩, 기록 기반 스트릭을 이어 붙여 사용자가 반복 학습할 수 있는 흐름을 만들었습니다.</p>
+                    </div>
+                    <div class="problem-grid">
+                        <div><strong>인증</strong><p>소셜 로그인과 사용자 도메인을 연결해 면접/학습 기록이 개인 흐름으로 쌓이도록 구성했습니다.</p></div>
+                        <div><strong>학습</strong><p>질문 목록, 상세, 카테고리, 키워드, 스크랩 API를 구성해 CS 학습 페이지를 지원했습니다.</p></div>
+                        <div><strong>문서화</strong><p>팀원이 같은 환경을 재현할 수 있도록 포팅과 시연 산출물을 정리했습니다.</p></div>
+                    </div>
                 </div>
-            </div>
+            </article>
         </section>
     </main>
 </body>
